@@ -1,0 +1,234 @@
+/* --------------------------------------------------
+   SNQR Reader – Theme Palette Definitions
+   This file only defines theme skins via body classes.
+   Loaded from: lib/css/style.css
+-------------------------------------------------- */
+
+/* Base fallback (no theme class) */
+body {
+  --snqr-bg: radial-gradient(circle at top left, #1f2937 0, #020617 45%, #000000 100%);
+  --snqr-panel-bg: rgba(15, 23, 42, 0.97);
+  --snqr-panel-border: rgba(148, 163, 184, 0.3);
+  --snqr-panel-heading: #9ca3af;
+  --snqr-accent: #60a5fa;
+}
+
+/* Helper: apply variables where used */
+body,
+body.theme-default,
+body.theme-dark,
+body.theme-light,
+body.theme-purple,
+body.theme-green,
+body.theme-red,
+body.theme-orange,
+body.theme-pink,
+body.theme-cyan,
+body.theme-indigo,
+body.theme-yellow,
+body.theme-gray,
+body.theme-emerald,
+body.theme-teal,
+body.theme-violet,
+body.theme-rose,
+body.theme-amber,
+body.theme-lime,
+body.theme-sky,
+body.theme-fuchsia,
+body.theme-slate,
+body.theme-zinc,
+body.theme-neutral,
+body.theme-stone,
+body.theme-dracula,
+body.theme-nord,
+body.theme-gruvbox,
+body.theme-solarized,
+body.theme-monokai,
+body.theme-tomorrow,
+body.theme-github,
+body.theme-material,
+body.theme-vscode,
+body.theme-atom,
+body.theme-xcode,
+body.theme-sublime,
+body.theme-jetbrains,
+body.theme-notepad,
+body.theme-terminal,
+body.theme-matrix,
+body.theme-cyberpunk,
+body.theme-ocean,
+body.theme-forest {
+  background: var(--snqr-bg);
+}
+
+/* Flipbook + panel pick up theme background */
+body #flipbookContainer {
+  background: var(--snqr-bg);
+}
+
+body .unified-panel {
+  background: var(--snqr-panel-bg);
+  border-left-color: var(--snqr-panel-border);
+}
+
+body .panel-section-title i {
+  color: var(--snqr-accent);
+}
+
+/* --------------------------------------------------
+   Core Themes
+-------------------------------------------------- */
+
+/* Default – dark institutional */
+body.theme-default {
+  --snqr-bg: radial-gradient(circle at top, #111827 0, #020617 55%, #000000 100%);
+  --snqr-panel-bg: rgba(15, 23, 42, 0.97);
+  --snqr-panel-border: rgba(148, 163, 184, 0.45);
+  --snqr-panel-heading: #9ca3af;
+  --snqr-accent: #60a5fa;
+}
+
+/* Dark – deeper contrast */
+body.theme-dark,
+body.theme-slate,
+body.theme-zinc,
+body.theme-neutral,
+body.theme-stone {
+  --snqr-bg: radial-gradient(circle at center, #020617 0, #020617 55%, #000000 100%);
+  --snqr-panel-bg: rgba(15, 23, 42, 0.98);
+  --snqr-panel-border: rgba(55, 65, 81, 0.9);
+  --snqr-panel-heading: #9ca3af;
+  --snqr-accent: #3b82f6;
+}
+
+/* Light – high-key research review */
+body.theme-light,
+body.theme-github,
+body.theme-xcode {
+  --snqr-bg: radial-gradient(circle at top, #f9fafb 0, #e5e7eb 55%, #d1d5db 100%);
+  --snqr-panel-bg: rgba(249, 250, 251, 0.98);
+  --snqr-panel-border: rgba(148, 163, 184, 0.6);
+  --snqr-panel-heading: #4b5563;
+  --snqr-accent: #2563eb;
+}
+
+/* Purple / Violet – SNQR quantum skin */
+body.theme-purple,
+body.theme-violet,
+body.theme-fuchsia,
+body.theme-cyberpunk {
+  --snqr-bg: radial-gradient(circle at top, #1e1b4b 0, #020617 55%, #020617 100%);
+  --snqr-panel-bg: rgba(17, 24, 39, 0.97);
+  --snqr-panel-border: rgba(139, 92, 246, 0.7);
+  --snqr-panel-heading: #c4b5fd;
+  --snqr-accent: #a855f7;
+}
+
+/* Green / Emerald / Forest – risk & regimes */
+body.theme-green,
+body.theme-emerald,
+body.theme-forest,
+body.theme-lime {
+  --snqr-bg: radial-gradient(circle at top, #022c22 0, #020617 55%, #000000 100%);
+  --snqr-panel-bg: rgba(6, 24, 20, 0.98);
+  --snqr-panel-border: rgba(34, 197, 94, 0.65);
+  --snqr-panel-heading: #bbf7d0;
+  --snqr-accent: #22c55e;
+}
+
+/* Teal / Cyan / Ocean */
+body.theme-teal,
+body.theme-cyan,
+body.theme-ocean,
+body.theme-sky {
+  --snqr-bg: radial-gradient(circle at top, #022c3a 0, #020617 55%, #000000 100%);
+  --snqr-panel-bg: rgba(15, 23, 42, 0.97);
+  --snqr-panel-border: rgba(56, 189, 248, 0.7);
+  --snqr-panel-heading: #bae6fd;
+  --snqr-accent: #06b6d4;
+}
+
+/* Indigo */
+body.theme-indigo {
+  --snqr-bg: radial-gradient(circle at top, #1e293b 0, #020617 55%, #000000 100%);
+  --snqr-panel-bg: rgba(15, 23, 42, 0.97);
+  --snqr-panel-border: rgba(129, 140, 248, 0.7);
+  --snqr-panel-heading: #c7d2fe;
+  --snqr-accent: #6366f1;
+}
+
+/* Red / Rose – stress regimes */
+body.theme-red,
+body.theme-rose {
+  --snqr-bg: radial-gradient(circle at top, #450a0a 0, #020617 55%, #000000 100%);
+  --snqr-panel-bg: rgba(24, 16, 16, 0.98);
+  --snqr-panel-border: rgba(248, 113, 113, 0.75);
+  --snqr-panel-heading: #fecaca;
+  --snqr-accent: #ef4444;
+}
+
+/* Orange / Amber */
+body.theme-orange,
+body.theme-amber {
+  --snqr-bg: radial-gradient(circle at top, #431407 0, #020617 55%, #000000 100%);
+  --snqr-panel-bg: rgba(24, 16, 12, 0.98);
+  --snqr-panel-border: rgba(251, 146, 60, 0.8);
+  --snqr-panel-heading: #fed7aa;
+  --snqr-accent: #f97316;
+}
+
+/* Yellow */
+body.theme-yellow {
+  --snqr-bg: radial-gradient(circle at top, #422006 0, #0b1120 55%, #020617 100%);
+  --snqr-panel-bg: rgba(24, 20, 12, 0.98);
+  --snqr-panel-border: rgba(234, 179, 8, 0.75);
+  --snqr-panel-heading: #fef9c3;
+  --snqr-accent: #eab308;
+}
+
+/* Gray */
+body.theme-gray {
+  --snqr-bg: radial-gradient(circle at top, #111827 0, #020617 55%, #000000 100%);
+  --snqr-panel-bg: rgba(17, 24, 39, 0.97);
+  --snqr-panel-border: rgba(107, 114, 128, 0.9);
+  --snqr-panel-heading: #e5e7eb;
+  --snqr-accent: #9ca3af;
+}
+
+/* Matrix / Terminal – green-on-black */
+body.theme-matrix,
+body.theme-terminal {
+  --snqr-bg: radial-gradient(circle at top, #020617 0, #020617 55%, #000000 100%);
+  --snqr-panel-bg: rgba(3, 7, 18, 0.98);
+  --snqr-panel-border: rgba(34, 197, 94, 0.7);
+  --snqr-panel-heading: #bbf7d0;
+  --snqr-accent: #22c55e;
+}
+
+/* Dracula / Nord / Gruvbox / Monokai / Tomorrow / Material / VS Code / Atom / Sublime / JetBrains / Notepad */
+body.theme-dracula,
+body.theme-nord,
+body.theme-gruvbox,
+body.theme-monokai,
+body.theme-tomorrow,
+body.theme-material,
+body.theme-vscode,
+body.theme-atom,
+body.theme-sublime,
+body.theme-jetbrains,
+body.theme-notepad {
+  --snqr-bg: radial-gradient(circle at top, #111827 0, #020617 55%, #020617 100%);
+  --snqr-panel-bg: rgba(17, 24, 39, 0.98);
+  --snqr-panel-border: rgba(129, 140, 248, 0.6);
+  --snqr-panel-heading: #e5e7eb;
+  --snqr-accent: #8b5cf6;
+}
+
+/* Solarized */
+body.theme-solarized {
+  --snqr-bg: radial-gradient(circle at top, #0f172a 0, #020617 55%, #00212b 100%);
+  --snqr-panel-bg: rgba(15, 23, 42, 0.97);
+  --snqr-panel-border: rgba(148, 163, 184, 0.6);
+  --snqr-panel-heading: #e5e7eb;
+  --snqr-accent: #facc15;
+}
