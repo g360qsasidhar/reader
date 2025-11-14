@@ -1,0 +1,16 @@
+{
+  "SNQR2025PR001": {
+    "title": "Sample Flagship Paper Title",
+    "pages": 42,
+    "readerUrl": "https://reader.snqrglobal.com/?doc=SNQR2025PR001",
+    "pdfPath": "./reader/SNQR2025PR001.pdf",
+    "backUrl": "https://www.snqrglobal.com/research/paper?id=SNQR2025PR001"
+  },
+  "SNQR2025PR002": {
+    "title": "Sample Signature Paper Title",
+    "pages": 36,
+    "readerUrl": "https://reader.snqrglobal.com/?doc=SNQR2025PR002",
+    "pdfPath": "./reader/SNQR2025PR002.pdf",
+    "backUrl": "https://www.snqrglobal.com/research/paper?id=SNQR2025PR002"
+  }
+}
